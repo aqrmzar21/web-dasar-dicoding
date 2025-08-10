@@ -78,7 +78,6 @@ nav ul {
 }
 
 nav li {
-   display: inline;
   list-style-type: none;
   margin-right: 20px;
 }
@@ -86,6 +85,8 @@ nav li {
 nav {
   background-color: #1382f8;
   padding: 5px;
+  position: sticky;
+  top: 0;
 }
 
 main {
