@@ -58,28 +58,52 @@ main {
   align-items: center;
 }
 
-.layout {
-  width: 70%;
-  margin: auto;
+main .content {
+  flex: 1;
   display: flex;
-  gap: 70px;
-  justify-content: center;
   align-items: center;
 }
-
-.deskripsi {
-  width: 100%;
-  padding: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.content-description {
+  flex: 1 1;
 }
-
-.brand {
+.content-description .title {
+  margin-block: 1rem;
+  font-size: 3.5rem;
+}
+.content-description p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  background-color: #2d3e50;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+button:hover {
+  border: 3px solid #2d3e50;
+  background-color: transparent;
+  color: #2d3e50;
+}
+.content-image {
+  flex: 1;
+  display: flex;
+}
+.content-image img {
   width: 300px;
+  min-width: 250px;
+  margin: auto;
   animation: naikTurun 2s infinite ease-in-out;
 }
+
 @keyframes naikTurun {
   0% {
     transform: translateY(0);
@@ -94,20 +118,36 @@ main {
     transform: translateY(0); /* kembali */
   }
 }
-
-.btn {
-  padding: 15px 35px;
-  border-radius: 20px;
-  background-color: #2d3e50;
-  color: white;
-  font-weight: 400;
-}
-.btn:hover {
+/* .btn:hover {
   color: #2d3e50;
   background-color: white;
   transform: scale(1.1);
-}
+} */
 
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #2d3e50;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+main aside .social-media li {
+  list-style-type: none;
+}
 
 @media screen and (max-width: 1000px) {
 }
