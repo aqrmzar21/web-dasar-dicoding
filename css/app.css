@@ -62,6 +62,7 @@ main .content {
   flex: 1;
   display: flex;
   align-items: center;
+  column-gap: 70px;
 }
 .content-description {
   flex: 1 1;
@@ -147,6 +148,16 @@ main aside .social-media ul {
 }
 main aside .social-media li {
   list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+main aside .social-media li a:hover {
+  color: #89b0d9;
 }
 
 @media screen and (max-width: 1000px) {
