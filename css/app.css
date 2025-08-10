@@ -48,6 +48,15 @@ header.navbar-container {
   letter-spacing: 2px;
   color: white;
 }
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+}
 
 .layout {
   width: 70%;
