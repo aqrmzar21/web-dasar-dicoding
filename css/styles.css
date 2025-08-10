@@ -97,6 +97,8 @@ main {
  
 #content {
   flex: 5;
+  display: flex;
+  flex-flow: nowrap;
 }
 aside {
   text-align: center;
