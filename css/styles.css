@@ -22,6 +22,12 @@ nav ul li a {
 nav {
    background-color: #1382f8;
    padding: 5px;
+   position: sticky;
+   top: 0;
+}
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
 }
 
 ul li {
