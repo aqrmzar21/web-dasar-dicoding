@@ -28,15 +28,15 @@ nav {
 nav ul {
   padding-inline: 4rem;
   display: flex;
+  gap: 2rem;
 }
 
-ul li {
+nav li {
   /* list-style: none; */
   display: inline;
-  list-style-type: none;
-  margin-right: 30px;
+  list-style: none;
 }
-ul li a:hover {
+nav li a:hover {
   font-weight: bold;
   letter-spacing: 3px;
 }
