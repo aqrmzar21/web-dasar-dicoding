@@ -5,12 +5,11 @@
 }
 body {
   font-family: "Quicksand", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   height: 100vh;
   margin: 0;
   padding: 0;
 }
-
 
 header.navbar-container {
   width: 100%;
@@ -22,20 +21,20 @@ header.navbar-container {
   align-items: center;
   z-index: 9999;
 }
-header.navbar-container .logo img {
+.logo img {
   width: 150px;
 }
 
-header.navbar-container .nav-list ul {
+.nav-list ul {
   padding-left: 0;
   display: flex;
   justify-content: center;
   gap: 2rem 1rem;
 }
-header.navbar-container .nav-list li {
+.nav-list li {
   list-style-type: none;
 }
-header.navbar-container .nav-list li a {
+.nav-list li a {
   padding: 0.5rem 1.5rem;
   border-radius: 999px;
   text-decoration: none;
@@ -44,9 +43,60 @@ header.navbar-container .nav-list li a {
   color: black;
   transition: all 0.2s ease-in-out;
 }
-header.navbar-container .nav-list li:hover a {
+.nav-list li:hover a {
   background-color: #425c77;
+  letter-spacing: 2px;
   color: white;
+}
+
+.layout {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.deskripsi {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  width: 300px;
+  animation: naikTurun 2s infinite ease-in-out;
+}
+@keyframes naikTurun {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px); /* naik */
+  }
+  75% {
+    transform: translateY(30px); /* turun */
+  }
+  100% {
+    transform: translateY(0); /* kembali */
+  }
+}
+
+.btn {
+  padding: 15px 35px;
+  border-radius: 20px;
+  background-color: #2d3e50;
+  color: white;
+  font-weight: 400;
+}
+.btn:hover {
+  color: #2d3e50;
+  background-color: white;
+  transform: scale(1.1);
 }
 
 
@@ -56,7 +106,7 @@ header.navbar-container .nav-list li:hover a {
 /* Perangkat dengan lebar layar 1200px dan di bawahnya */
 @media screen and (max-width: 1200px) {
 }
- 
+
 /* Perangkat dengan lebar layar 768px dan di bawahnya */
 @media screen and (max-width: 768px) {
 }
