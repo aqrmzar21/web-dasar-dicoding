@@ -1,74 +1,199 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page Dicoding</title>
-    <!-- My Font CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik+Mono+One&display=swap"
-      rel="stylesheet"
-    />
-    <!-- My Own CSS -->
-    <link rel="stylesheet" href="css/app.css" />
-    <!-- My Own CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Dicoding | PemogramanWeb</title>
+    <!-- <title>WEB H2</title> -->
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <header class="navbar-container">
-      <div class="logo">
-        <img src="img/dicoding-header-logo.png" alt="Dicoding Indonesia" />
+    <header>
+      <div class="col3">
+        <h3 class="deskripsi-judul">Protofolio Web</h3>
       </div>
-      <nav class="nav-list">
-        <ul>
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Apa yang Baru</a></li>
-          <li><a href="#">Kontak</a></li>
+      <nav class="col6">
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <!-- <li>Home</li> -->
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">About</a></li>
         </ul>
       </nav>
     </header>
-    <!-- Isi konten halaman web -->
+
+    <!-- INI CONTEN -->
     <main>
-      <section class="content">
-        <div class="content-decription">
-          <h1>Dicoding 1ndonesia</h1>
-          <p>
-            Kami yakin pendidikan teknologi adalah fondasi bagi setiap bangsa agar menjadi yang terdepan dalam menghadapi dunia digital. Dicoding hadir sebagai platform pendidikan teknologi yang membantu menghasilkan talenta digital
-            berstandar global. Semua demi mengakselerasi Indonesia agar menjadi yang terdepan.
-          </p>
-          <button type="button" class="btn">Lebih Lanjut</button>
+      <article class="row">
+        <div class="col">
+          <section class="intro">
+            <div class="deskripsi-judul"><h1>Intro</h1></div>
+            <h2>Hi, I'm <span>O</span><span class="h2n">ZO</span><span>N</span></h2>
+
+            <p>
+              Saya merupakan salah satu mahasiswa dari program studi S1-Sistem Informasi Fakultas Teknik, Universitas Negeri Gorontalo Angkatan 2020. Saya merupakan putra daerah asal Muna SULTRA (Sulawesi Tenggara)
+              <br />
+              Pada program Pertukaran Mahasiswa Merdeka 2 (PMM 2), mahasiswa perlu mengikuti proses pembelajaran hingga sebanyak 20 SKS di dalam maupun di luar program studinya sesuai dengan kebutuhan minat mahasiswa atas persetujuan PT
+              Pengirim. Pembelajaran tersebut mencakup kegiatan wajib berupa modul nusantara dan mata kuliah yang ditawarkan PT Penerima.
+            </p>
+          </section>
         </div>
-        <div class="content-image">
-          <img class="brand" src="img/circle-g.jpg" alt="" />
+        <div class="col">
+          <aside>
+            <div class="deskripsi-judul"><h1>Me</h1></div>
+            <span class="describe">Mahasiswa Pertukaran Mahasiswa Merdeka Batch II - 2023 </span>
+
+            <img class="deskripsi-foto" src="20220726_135821.png" alt="gambar_logo" width="190px" />
+            <div class="deskripsi-tombol"><button type="button" class="here">Click for more</button></div>
+          </aside>
         </div>
-      </section>
-      <aside>
-        <div class="social-media">
-          <ul>
-            <li>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-            </li>
-          </ul>
+      </article>
+
+      <article class="mk">
+        <div>
+          <h3>Mata Kuliah</h3>
         </div>
-      </aside>
+
+        <div class="row layout">
+          <div><h5>Brand Communication</h5></div>
+          <div><h5>Kewirausahaan</h5></div>
+          <div><h5>Organisasi dan Arsitektur Komputer</h5></div>
+          <div><h5>Pengantar DKV</h5></div>
+          <div><h5>Rekayasa Perangkat Lunak</h5></div>
+          <div><h5>Service Design</h5></div>
+          <div><h5>Teknik Presentasi</h5></div>
+          <div><h5>Modul Nusantara</h5></div>
+        </div>
+      </article>
+
+      <article class="row">
+        <!-- <div><h3>Kelompok Nusantara</h3></div> -->
+        <div class="team">
+          <div>
+            <div class="deskripsi-judul"><h3>Team A</h3></div>
+            <div class="kelas">
+              <ul>
+                <li>LASRIA HOTNAULI SITOMPUL, 202072014</li>
+                <li>AL ERRIS GASYA RASU, 2121000010</li>
+                <li>M TESAR HADIANSAH, 20A1002</li>
+                <li>FREDYNAN SUKMA, 2041072</li>
+                <li>FERNANDO DIMAS DIPO, 2007220050</li>
+                <li>SYAHDAN HUSAIN, 521421025</li>
+                <li>JOSWAL YATALATTOP, 200605016</li>
+                <li>DJAFAR SIDDIQ ASSEGAF, F55120122</li>
+                <li>ZARINA ANNISA PADAULENG, 2013511058</li>
+                <li>JUMLIA CADARWATI, E1A120060</li>
+                <li>ASSRUL IPANDI, 20.01.015.018</li>
+                <li>GRACE TRIVENA MANGADIL, 20211029</li>
+                <li>HESTI INDAH HASKINA, 1904411819</li>
+                <li>HASRIL, 2004411731</li>
+                <li>AULIA WINA SYAFITRI, 200602068</li>
+                <li>MARGARETHA FABIOLA S, 201955201107</li>
+                <li>ESTISUNDARI, 20441164</li>
+                <li>RADIL RAFLI AIMAR TRENGGANO, 202072039</li>
+                <li>DOMINIKUS SAKTI, 6160507200011</li>
+                <li>NISA IRALLA, 5192411002</li>
+                <li>YOHOSWA DJAHANSEN LAURENS, 2020RB05023</li>
+              </ul>
+            </div>
+            <h5 class="lo"><small>LO :</small> Hanindita</h5>
+          </div>
+          <div>
+            <div class="deskripsi-judul"><h3>Team B</h3></div>
+            <div class="kelas">
+              <ul>
+                <li>M SEAN MAHOGRA RADI, 2010952044</li>
+                <li>MUHAMMAD IQBAL JULIANSYAH, 210180098</li>
+                <li>MUHAMMAD AL KAHFI, 21441085</li>
+                <li>MUHAMMAD KHOLIK, 2043117</li>
+                <li>YUYUN RAMADHANI MUIS, C20120157</li>
+                <li>WA ODE WINDA JULFIANINGSI, E1A120096</li>
+                <li>SYAHRUN FATHAN HIDAYAH, F55120127</li>
+                <li>MUJAKIR M NUR, 07252011017</li>
+                <li>MUH FHADYL ANANDA WIRYADINATA, 2004411693</li>
+                <li>OGI RAHMAN, 200601048</li>
+                <li>NIKA YULIA ROSDIANA, 210601042</li>
+                <li>IGNASIUS ROBERTO PEKEY, 5720120040</li>
+                <li>ANDI YAHYA, 2155201117</li>
+                <li>IZHAR KADIR SAPUTRA, 521420012</li>
+                <li>LAURA ANGELICA, 200320007</li>
+                <li>DONI ASMADI SATRIA PUTRA, 200601006</li>
+                <li>SASKIA PABIARAN, 202055201058</li>
+                <li>VIANISA BR SEMBIRING, 20211009</li>
+                <li>CHADIJAH, 1904411742</li>
+                <li>DINI OLIYANA, 2004411685</li>
+                <li>ANDI RIZKAN PERDANA, E1D019021</li>
+                <li>MILAN IRSAD BACHRUL ULUM PAWA, 202072035</li>
+              </ul>
+            </div>
+            <h5 class="lo"><small>LO :</small> Ghifari</h5>
+          </div>
+          <div>
+            <div class="deskripsi-judul"><h3>Team C</h3></div>
+            <div class="kelas">
+              <ul>
+                <li>MUHAMMAD ALI IMRAN NST, 20451068</li>
+                <li>DAL JAHRA, 2019051014001</li>
+                <li>FEBRI, 202010142</li>
+                <li>JUNINDA RAHLIANI J, 202072018</li>
+                <li>LALU NORA WINARDI, 200605020</li>
+                <li>SATRIO ARDY KURNIAWAN, 2043073</li>
+                <li>SELVANA Y UMAR, 521421007</li>
+                <li>HIKMA PURNAMA LESTARI, E1A120057</li>
+                <li>SEFI RATIWI, 200202056</li>
+                <li>ALFI SAHRI ALDI, 200602002</li>
+                <li>ARICO SEMPANA GINTING, 203303040276</li>
+                <li>ATHALYA KHANZA PERMANA, 2004109010045</li>
+                <li>AAVRI ISWANDI, F55120090</li>
+                <li>JONATHAN ZEBINA LAALA, F55120097</li>
+                <li>LINDA RAHMANI, 200601040</li>
+                <li>ADAM SUHANDI, 21314023</li>
+                <li>BILLY JONATHAN, 1904411787</li>
+                <li>MUH RADIFANSYAH R, 2004411415</li>
+                <li>MUH ALFRYAN PRATAMA S, 2004411692</li>
+                <li>RIYAN ROLIANDA, 210130016</li>
+                <li>ALMALIK FAJAR SYAMIUM, 200303501063</li>
+                <li>PAULUS ALESANDRO, 231910089</li>
+              </ul>
+            </div>
+            <h5 class="lo"><small>LO :</small> Mirza</h5>
+          </div>
+          <div>
+            <div class="deskripsi-judul"><h3>Team D</h3></div>
+            <div class="kelas">
+              <ul>
+                <li>WA ODE MELINDA AMELIA, E1F119036</li>
+                <li>FEBI ANDINI, 20441121</li>
+                <li>AZWAR, 03320200002</li>
+                <li>PARHAN PAUZI SALIM, F55120095</li>
+                <li>SYARIFAH FATHIMAH AZ-ZAHRA, 2008107010011</li>
+                <li>I MADE PAGARAT, 202162121054</li>
+                <li>YESSY PHALENTINA BR SAGALA, 203303040285</li>
+                <li>MUHAMAD ARRAFI, F1E120054</li>
+                <li>LALU GARIN HIJRIATULLAH, 190601014</li>
+                <li>SUBHAN HADI, 200601054</li>
+                <li>VIONA THERESIA CHRISTIEN POLUAN, 04201094</li>
+                <li>ALMAUN, 201955201022</li>
+                <li>IRPANDI LEBANG, 1904411282</li>
+                <li>YOLIVIA LI, 2004411690</li>
+                <li>ALDAYANTI, 2004411706</li>
+                <li>ABDUL AKRAM, 531420025</li>
+                <li>INTAN, E1F120004</li>
+                <li>WILLYAM LUCAS APITULEY, 202072047</li>
+                <li>YEREMIAS PERIKAES, 231910132</li>
+                <li>MUHAMMAD AKBAR, 5193111006</li>
+                <li>APOLOS HOSYO, 2020RB05003</li>
+              </ul>
+            </div>
+            <h5 class="lo"><small>LO :</small> Priandari</h5>
+          </div>
+        </div>
+      </article>
     </main>
+
+    <footer>
+      <p class="love">Copyright @2025 | from <strong>Aqr</strong> with Peace</p>
+    </footer>
   </body>
 </html>
