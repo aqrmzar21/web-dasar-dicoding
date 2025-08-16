@@ -6,7 +6,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/aqrmzar21/web-dasar-dicoding)
 ![GitHub license](https://img.shields.io/github/license/aqrmzar21/web-dasar-dicoding)
 
-> ⚠️ Ganti `username` dengan nama akun GitHub kamu agar badge berfungsi dengan benar.
+> ⚠️ Ganti `aqrmzar21` dengan nama akun GitHub kamu agar badge berfungsi dengan benar.
 
 ---
 
