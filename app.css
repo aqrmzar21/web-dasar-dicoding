@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Ghaitsa, sans-serif;
+  font-size: 17px;
+  width: 100vh auto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  box-sizing: border-box;
+
+  /* border-bottom-radius: 10px; */
+  /* border-bottom: 1px solid black; */
+  box-shadow: 0px 3px 0.3px #aaa;
+}
+main {
+  /* width: 100%; */
+  margin: 10px auto;
+  /* align-self: center; */
+}
+footer {
+  background-color: #fff;
+  box-shadow: 1px -3px 5px 0px #aaa;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.love {
+  padding: 10px;
+}
+
+nav,
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li a,
+nav li {
+  padding: 6px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #03a9f4;
+  padding: 2px 10px;
+  border-radius: 30px;
+  /* letter-spacing: 2px; */
+}
+
+article.row {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px 50px 20px 50px;
+
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+.col {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+aside {
+  padding: 30px;
+  align-content: center;
+  text-align: center;
+}
+
+section.intro {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  padding: 30px;
+}
+
+.describe {
+  font-size: 13px;
+  font-family: Pulang;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background-color: rgb(0, 181, 252);
+}
+button:hover {
+  border: 1px solid #03a9f4;
+  background-color: white;
+  color: rgb(0, 181, 252);
+}
+
+article.mk {
+  display: flex;
+  width: 100%;
+
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 50px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.lo {
+  justify-self: flex-end;
+  padding: 5px;
+}
+.kelas {
+  padding: 15px;
+  font-size: 15px;
+}
+
+.team {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 10px 0 50px 0;
+  justify-content: space-evenly;
+}
+.layout {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+}
+
+.team > div,
+.layout > div {
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h3 {
+  color: #03a9f4;
+  letter-spacing: 2px;
+}
+
+/* Perangkat dengan lebar layar 1000px dan di bawahnya */
+@media screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+  }
+
+  article.row {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .describe {
+    font-size: 18px;
+    padding: 1em;
+  }
+
+  .deskripsi-foto {
+    width: 250px;
+  }
+
+  aside,
+  section.intro {
+    padding: 20px;
+    text-align: center;
+  }
+  div.team {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  .deskripsi-judul h1,
+  .deskripsi-judul h3 {
+    font-size: 20px;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .team {
+    gap: 20px;
+    width: 100%;
+  }
+  button.here {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
