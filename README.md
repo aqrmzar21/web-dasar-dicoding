@@ -56,8 +56,8 @@ Saya merupakan mahasiswa S1 Sistem Informasi, Universitas Negeri Gorontalo, angk
 Jika kamu ingin berdiskusi atau memberikan masukan, silakan hubungi melalui:
 
 - 📧 Email: [aqramzoombar@gmail.com]
-- 📷 Instagram: [@arkaan.id]
-- 💼 LinkedIn: [linkedin.com/in/abdul-akram-357633298]
+- 📷 Instagram: [[@arkaan.id](https://www.instagram.com/arkaann.id)]
+- 💼 LinkedIn: [[linkedin.com/in/abdul-akram-357633298](https://www.linkedin.com/in/abdul-akram-357633298/)]
 
 ---
 
