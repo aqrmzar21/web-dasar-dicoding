@@ -9,12 +9,12 @@ body {
 }
 h2,
 h3 {
-  color: #00aeee;
+  color: #030a12;
 }
 
 h4,
 h5 {
-  color: #1382f8;
+  color: #030a12;
 }
 table,
 th,
@@ -26,7 +26,7 @@ td {
 footer {
   padding: 20px;
   color: white;
-  background-color: #1382f8;
+  background-color: #030a12;
   text-align: center;
   font-weight: bold;
 }
@@ -83,7 +83,7 @@ nav li {
 }
 
 nav {
-  background-color: #1382f8;
+  background-color: #030a12;
   padding: 5px;
   position: sticky;
   top: 0;
