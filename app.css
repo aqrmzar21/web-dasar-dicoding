@@ -1,11 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: Ghaitsa, sans-serif;
   font-size: 17px;
+  background-color: #121212; /* latar belakang gelap */
+  color: #e0e0e0; /* teks terang */
   width: 100vh auto;
 }
 
@@ -16,22 +19,21 @@ header {
   align-items: center;
   padding: 12px;
   box-sizing: border-box;
+  background-color: #1e1e1e;
+  box-shadow: 0px 3px 0.3px #000;
+}
 
-  /* border-bottom-radius: 10px; */
-  /* border-bottom: 1px solid black; */
-  box-shadow: 0px 3px 0.3px #aaa;
-}
 main {
-  /* width: 100%; */
   margin: 10px auto;
-  /* align-self: center; */
 }
+
 footer {
-  background-color: #fff;
-  box-shadow: 1px -3px 5px 0px #aaa;
+  background-color: #1e1e1e;
+  box-shadow: 1px -3px 5px 0px #000;
   width: 100%;
   display: flex;
   justify-content: center;
+  color: #ccc;
 }
 
 .love {
@@ -48,22 +50,20 @@ nav li a,
 nav li {
   padding: 6px;
   text-decoration: none;
-  color: black;
+  color: #e0e0e0;
 }
 
 nav a:hover {
-  color: #fff;
-  background-color: #03a9f4;
-  padding: 2px 10px;
+  color: #121212;
+  background-color: #6ba0da;
+  padding: 5px 20px;
   border-radius: 30px;
-  /* letter-spacing: 2px; */
 }
 
 article.row {
   width: 100%;
   box-sizing: border-box;
   padding: 50px 50px 20px 50px;
-
   display: flex;
   gap: 30px;
   justify-content: space-around;
@@ -71,7 +71,8 @@ article.row {
 
 .col {
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1);
 }
 
 aside {
@@ -89,27 +90,35 @@ section.intro {
 
 .describe {
   font-size: 13px;
-  font-family: Pulang;
+  font-family: Pulang, sans-serif;
+  color: #ccc;
+}
+
+.deskripsi-foto {
+  filter: grayscale(40);
+  width: 150px;
+  border-radius: 50%;
+  border: 30px solid #1f1f1f;
 }
 
 button {
-  color: white;
+  color: #fff;
   font-weight: bold;
   padding: 10px;
   border-radius: 30px;
-  border: 1px solid white;
-  background-color: rgb(0, 181, 252);
+  border: 1px solid #03a9f4;
+  background-color: #2d3e50;
 }
+
 button:hover {
   border: 1px solid #03a9f4;
-  background-color: white;
-  color: rgb(0, 181, 252);
+  background-color: #6ba0da;
+  color: #121212;
 }
 
 article.mk {
   display: flex;
   width: 100%;
-
   flex-direction: column;
   gap: 10px;
   padding: 20px 50px;
@@ -121,6 +130,7 @@ article.mk {
   justify-self: flex-end;
   padding: 5px;
 }
+
 .kelas {
   padding: 15px;
   font-size: 15px;
@@ -134,12 +144,12 @@ article.mk {
   padding: 10px 0 50px 0;
   justify-content: space-evenly;
 }
+
 .layout {
   width: 100%;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-
   justify-content: space-evenly;
 }
 
@@ -148,16 +158,17 @@ article.mk {
   padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1);
 }
 
 h1,
 h3 {
-  color: #03a9f4;
-  letter-spacing: 2px;
+  color: #6ba0da;
+  letter-spacing: 3px;
 }
 
-/* Perangkat dengan lebar layar 1000px dan di bawahnya */
+/* Responsive adjustments */
 @media screen and (max-width: 1000px) {
   header {
     flex-direction: column;
@@ -167,6 +178,7 @@ h3 {
     flex-direction: column;
     padding: 20px;
   }
+
   .describe {
     font-size: 18px;
     padding: 1em;
@@ -181,27 +193,51 @@ h3 {
     padding: 20px;
     text-align: center;
   }
+
   div.team {
     flex-direction: column;
     padding: 10px;
   }
 }
 
-/* Perangkat dengan lebar layar 768px dan di bawahnya */
 @media screen and (max-width: 768px) {
   .deskripsi-judul h1,
   .deskripsi-judul h3 {
     font-size: 20px;
   }
+  ul.menu {
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 10px;
+  }
 
+  ul.menu li {
+    width: 100%;
+    display: flex;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    justify-content: center;
+  }
+  li a:hover {
+    color: #2d3e50;
+    font-weight: 5px;
+    padding: 0;
+    background-color: #1f1f1f;
+  }
   .col {
     width: 100%;
+  }
+  .col3 {
+    padding-bottom: 2px;
+    margin-bottom: 2em;
+    border-bottom: 1px solid white;
   }
 
   .team {
     gap: 20px;
     width: 100%;
   }
+
   button.here {
     padding: 8px 16px;
     font-size: 14px;
