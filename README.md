@@ -1,4 +1,4 @@
-# 🌐 Protofolio Web – Dicoding Pemrograman Web
+# 🌐 Protofolio PMM2 – Dicoding Pemrograman Web
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/aqrmzar21/web-dasar-dicoding)
 ![GitHub stars](https://img.shields.io/github/stars/aqrmzar21/web-dasar-dicoding?style=social)
